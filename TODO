@@ -1,0 +1,61 @@
+optimize, optimize, optimize
+keep track of attack/defence balance on each square and use this information to determine best moves
+add verbosity switch
+iteration instead of recursion?
+attack as many squares as possible
+defend as many squares as possible
+attack as many enemy pieces as possible
+attack as much material as possible
+encourage development
+if forced checkmate sequence found, lower depth by 1 for each turn?
+store move tree between moves
+make as many threats as possible threats if safe (attacking pieces and checking)
+modularize
+
+use flags (flag fields) for piece types and when checking for piece types?
+general functions for piece movements that take another function that gets legal moves / checks for checks / attacks squares / etc. as a parameter
+
+prefer moves that reach a desired state quicker
+list with piece coordinates
+make sure parallell computation is working properly
+let user to set thread count (http://stackoverflow.com/questions/095309/openmp-set-num-threads-is-not-working)
+attack squares when checking for legal moves?
+average number of legal moves per piece?
+set depth mode in which checkmate and stalemate is not checked on max depth?
+is_threat() function
+consider relationship between attacked squares and material?
+
+if king does not move he cannot be checked by a knight (unless already in check)
+
+rename "legal moves" "moves", since the engine now allows putting itself in check
+
+modularize (split functions into files)
+
+don't use scanf()
+
+only let the player do legal moves (i.e. check if first moves checks mover)
+
+make king move generation faster (castle move generation makes it slow)
+
+let user decide whether engine should allow moves that put the player in check
+
+remove COLOR_NONE entirely (unnecessary)
+
+union for PIECE_NONE?
+
+add interactive loading of game files
+
+get_piece(), get_piece_type(), get_piece_color(), etc.
+set_piece(), set_piece_type(), set_piece_color(), etc.
+
+verify that new effective check code does not contain errors (it likely does)
+
+speed up move_checks_mover() (even further?)
+
+separate threat level from score
+
+intelligently update previous move list when generating new move list instead of generating a new one every time
+
+encourage pieces to be connected (i.e. pieces defending each other like a connected graph)
+
+do not recalculate scores for moves whose score has already been calculated
